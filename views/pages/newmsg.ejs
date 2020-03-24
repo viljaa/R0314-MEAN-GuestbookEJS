@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <%- include ('../partials/head')%>
+
+    <!--Scripts loaded with async, so they can be loaded at the same time browser is loading body-->
+    <!--Script to prevent sending empty form fields-->
+    <script type="text/javascript" async>
+        function empty(){
+            let name = document.getElementById('form_name').value;
+            let country = document.getElementById('form_country').value;
+            let msg = document.getElementById('form_message').value;
+          
+            if (name = '' || country == '' || msg == '') { 
+                alert("Can't sumbit empty fields! Check all input fields!");
+                return false;
+            };
+        };
+    </script>
+
+</head>
+<body>
+    <!--Navigation bar-->
+    <%- include('../partials/navigation')%>
+
+    <!--Front page content-->
+    <%- include('../partials/newmsg_form')%>
+
+    <footer>
+        <%- include ('../partials/footer')%>
+    </footer>
+</body>

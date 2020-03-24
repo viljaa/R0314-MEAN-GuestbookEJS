@@ -1,0 +1,183 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+body{
+    font-family: 'Sen', sans-serif;
+    background: rgb(53, 53, 53);
+}
+
+/*ELEMENTS*/
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    z-index: 99;
+  
+}
+
+/*Homepage elements*/
+.pure-menu{
+    background-color:  rgb(65, 65, 65);
+    z-index: 4;
+}
+
+.splash-container {
+    background: rgb(53, 53, 53);
+    background-image: url('https://miro.medium.com/max/6000/0*yzDuQsL9aT6ZDA8j');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 93%;
+    top: auto;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.splash-head {
+    font-size: 55px;
+    font-weight: bold;
+    color:white;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.splash-subhead {
+    color:rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.pure-button {
+    background-color: #d69301 !important;
+    color:rgb(65, 65, 65);
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+a.pure-button-primary {
+    border-radius: 5px;
+    font-size: 120%;
+    margin: 0px 5px 0px 5px;
+}
+/*Guestbook elemets*/
+#tablecontainer{
+    margin-top: 100px;
+    color: rgb(65, 65, 65) !important;
+    font-size: 20px;
+}
+th{
+    background-color: #d69301 !important;
+    color: white;
+}
+.id_th{
+    max-width: 20px;
+}
+.custom_th{
+    min-width: 100px;
+}
+
+.msg_th{
+    min-width: 200px;
+}
+
+td{
+    background-color: white !important;
+}
+
+/*New Message -elements*/
+#formcontainer{
+    margin-top: 100px;
+}
+
+#sendMSG_btn{
+    margin-top: 10px;
+    width: 100%;
+}
+
+/*TEXT*/
+.pure-menu-link{
+    color: white !important;
+}
+
+#guestbook_h1{
+    font-size: 55px;
+    font-weight: 80;
+    color: white!important;
+}
+
+.subpage_h1{
+    font-size: 55px;
+    font-weight: 80;
+    color: white!important;
+}
+
+#footer_p{
+    margin-top: 0.18%;
+    color: white;
+    opacity: 0.7;
+}
+
+/*ANIMATIONS*/
+.pure-menu-link:hover{
+    color: rgb(65, 65, 65) !important;
+}
+
+/*MEDIA QUERIES*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 35%!important;
+        width: 35%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        font-size: 40% !important;
+        width: 40%;
+    } 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 60%!important;
+        width: 60%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 80%!important;
+        width: 80%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        font-size: 100%!important;
+        width: 100%;
+    }
+}
