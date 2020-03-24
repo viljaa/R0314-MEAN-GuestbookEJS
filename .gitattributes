@@ -3,5 +3,5 @@
 
 # github-linguist config
 *.css linguist-detectable=false
-*.html linguist-detectable=false
+*.ejs linguist-detectable=false
 *.js linguist-detectable=true
